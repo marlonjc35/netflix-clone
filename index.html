@@ -1,16 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarlonFlix</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <h1>Netflix Clone</h1>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="script.js"></script>
-</body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="hero">
+      <header class="header">
+        <img src="assets/images/logo.png" alt="MarlonFlix" class="logo" />
+
+        <div class="header-buttons">
+          <button class="language">Português</button>
+
+          <button class="login">Entrar</button>
+        </div>
+      </header>
+
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1>
+          Filmes, séries e muito mais,
+          <br />
+          sem limites.
+        </h1>
+
+        <h2>Assista onde quiser. Cancele quando quiser.</h2>
+
+        <p>
+          Quer assistir? Informe seu email para criar ou reiniciar sua
+          assinatura.
+        </p>
+
+        <div class="email-box">
+          <input type="email" placeholder="Email" />
+
+          <button>Vamos lá ></button>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
