@@ -2,6 +2,11 @@
 
 Landing page inspirada na Netflix, construída com HTML, CSS e JavaScript puro (sem frameworks). Projeto de portfólio focado em replicar a experiência visual e de interação da página inicial da Netflix.
 
+## 🔗 Links
+
+- **💻 Demonstração:** [netflix-clone-three-gamma-29.vercel.app](https://netflix-clone-three-gamma-29.vercel.app)
+- **📂 Código-fonte:** [github.com/marlonjc35/netflix-clone](https://github.com/marlonjc35/netflix-clone)
+
 ![MarlonFlix](assets/images/screenshot.png)
 
 ## ✨ Funcionalidades
@@ -51,10 +56,6 @@ netflix-clone/
    ```
 2. Abra o arquivo `index.html` no navegador.
 
-## 🔗 Links
-
-- **💻 Demonstração:** [netflix-clone-three-gamma-29.vercel.app](https://netflix-clone-three-gamma-29.vercel.app)
-- **📂 Código-fonte:** [github.com/marlonjc35/netflix-clone](https://github.com/marlonjc35/netflix-clone)
 
 ## 📄 Licença
 
