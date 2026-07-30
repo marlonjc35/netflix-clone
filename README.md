@@ -18,9 +18,10 @@ Landing page inspirada na Netflix, construída com HTML, CSS e JavaScript puro (
 
 ## 🛠️ Tecnologias
 
-- HTML5
+- HTML5 (estruturação semântica e acessibilidade ARIA)
 - CSS3 (flexbox, grid, animações, media queries)
 - JavaScript Vanilla (DOM, eventos, i18n)
+- Google Fonts (fonte Inter)
 
 ## 🎞️ Filmes do catálogo
 
@@ -34,10 +35,11 @@ netflix-clone/
 ├── assets/
 │   ├── css/style.css
 │   ├── js/script.js
+│   ├── icons/              (favicon)
 │   └── images/
 │       ├── hero-bg.jpg
 │       ├── screenshot.png
-│       └── posters/        (10 posters SVG + 5 PNG)
+│       └── posters/         (10 posters SVG + 5 PNG)
 └── README.md
 ```
 
