@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e78865"/>
+      <stop offset="40%" stop-color="#f0b559"/>
+      <stop offset="100%" stop-color="#a7284a"/>
+    </linearGradient>
+    <linearGradient id="rain6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg6)"/>
+  <rect width="400" height="400" fill="url(#rain6)"/>
+  <g stroke="#fff" stroke-width="1" opacity=".2">
+    <line x1="50" y1="0" x2="30" y2="200"/><line x1="100" y1="0" x2="80" y2="180"/>
+    <line x1="150" y1="0" x2="130" y2="200"/><line x1="200" y1="0" x2="180" y2="200"/>
+    <line x1="250" y1="0" x2="230" y2="200"/><line x1="300" y1="0" x2="280" y2="200"/>
+    <line x1="350" y1="0" x2="330" y2="200"/>
+  </g>
+  <ellipse cx="200" cy="380" rx="120" ry="8" fill="#7a1a30" opacity=".3"/>
+  <circle cx="200" cy="350" r="80" fill="#a7284a" opacity=".3"/>
+  <g fill="#3d1520" opacity=".4">
+    <rect x="80" y="400" width="40" height="200"/><rect x="280" y="400" width="40" height="200"/>
+    <rect x="150" y="420" width="30" height="180"/><rect x="220" y="410" width="30" height="190"/>
+  </g>
+  <g transform="translate(200,530)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="20" font-weight="900" fill="#fff" letter-spacing="-1">DEPOIS DA</text>
+    <text font-size="28" font-weight="900" fill="#fff" letter-spacing="-1" y="32">CHUVA</text>
+  </g>
+</svg>

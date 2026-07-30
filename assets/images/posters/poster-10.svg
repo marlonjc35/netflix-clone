@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12342e"/>
+      <stop offset="50%" stop-color="#1a3025"/>
+      <stop offset="100%" stop-color="#477b50"/>
+    </linearGradient>
+    <linearGradient id="mist10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1ac55" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#f1ac55" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#12342e" stop-opacity=".5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg10)"/>
+  <rect width="400" height="600" fill="url(#mist10)"/>
+  <g fill="#0a1f18" opacity=".5">
+    <path d="M0,350 L50,280 L100,320 L140,250 L180,300 L220,240 L260,290 L300,260 L350,310 L400,280 L400,600 L0,600 Z"/>
+  </g>
+  <g fill="#1a3a25" opacity=".6">
+    <rect x="60" y="380" width="12" height="80"/><rect x="80" y="370" width="8" height="90"/>
+    <rect x="300" y="375" width="10" height="85"/><rect x="320" y="365" width="8" height="95"/>
+    <rect x="150" y="390" width="10" height="70"/><rect x="250" y="385" width="8" height="75"/>
+  </g>
+  <g fill="#f1ac55" opacity=".08">
+    <ellipse cx="200" cy="400" rx="180" ry="20"/>
+    <ellipse cx="200" cy="440" rx="200" ry="15"/>
+  </g>
+  <g transform="translate(200,520)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="24" font-weight="900" fill="#fff" letter-spacing="-1">TERRA</text>
+    <text font-size="24" font-weight="900" fill="#f1ac55" letter-spacing="-1" y="28">SELVAGEM</text>
+  </g>
+</svg>

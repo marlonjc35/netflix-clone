@@ -1,58 +1,489 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
     <title>MarlonFlix</title>
-
-    <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon-180.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-
   <body>
-    <section class="hero">
+    <main class="hero">
+      <div class="overlay"></div>
       <header class="header">
-        <img src="assets/images/logo.png" alt="MarlonFlix" class="logo" />
-
-        <div class="header-buttons">
-          <button class="language">Português</button>
-
-          <button class="login">Entrar</button>
+        <a class="brand" href="#inicio" aria-label="MarlonFlix - início"
+          >MARLON<span>FLIX</span></a
+        >
+        <div class="header-actions">
+          <label class="language" for="language">
+            <span aria-hidden="true">⌄</span>
+            <select id="language" aria-label="Idioma">
+              <option value="pt-BR">Português</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <a class="login" href="#email">Entrar</a>
         </div>
       </header>
 
-      <div class="overlay"></div>
-
-      <div class="hero-content">
-        <h1>
-          Filmes, séries e muito mais,
-          <br />
-          sem limites.
-        </h1>
-
+      <section class="hero-content" id="inicio">
+        <h1>Filmes, séries e muito mais,<br />sem limites.</h1>
         <h2>Assista onde quiser. Cancele quando quiser.</h2>
-
         <p>
-          Quer assistir? Informe seu email para criar ou reiniciar sua
+          Quer assistir? Informe seu e-mail para criar ou reiniciar sua
           assinatura.
         </p>
-
-        <div class="email-box">
-          <input type="email" placeholder="Email" />
-
-          <button>Vamos lá ></button>
+        <form class="email-box" novalidate>
+          <label class="sr-only" for="email">E-mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="E-mail"
+            autocomplete="email"
+            required
+          />
+          <button type="submit">
+            Vamos lá <span aria-hidden="true">›</span>
+          </button>
+        </form>
+        <small class="form-message" aria-live="polite"></small>
+      </section>
+    </main>
+    <div class="arc-separator" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,120 C480,20 960,20 1440,120 L1440,120 L0,120 Z" fill="#000"></path>
+        <path d="M0,120 C480,20 960,20 1440,120" fill="none" stroke="#e50914" stroke-width="3" vector-effect="non-scaling-stroke"></path>
+      </svg>
+    </div>
+    <section class="catalog trending" aria-labelledby="catalog-title">
+      <div class="catalog-heading">
+        <div>
+          <p>TOP 10</p>
+          <h2 id="catalog-title">Em alta na MarlonFlix</h2>
         </div>
+      </div>
+      <div class="movie-carousel">
+        <button
+          class="carousel-button previous"
+          type="button"
+          aria-label="Ver filmes anteriores"
+        >
+          ‹</button>
+        <div class="movie-row" tabindex="0">
+        <article
+          class="movie-card poster-1"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-1.png"
+          data-title="Horizonte Zero"
+          data-synopsis="Uma cena de ficção científica em Marte, com um astronauta olhando para as dunas ao pôr do sol."
+          data-genre="Ficção científica · 1h 52min"
+          data-en-title="Horizon Zero"
+          data-en-synopsis="A science fiction scene on Mars, with an astronaut looking at the dunes at sunset."
+          data-en-genre="Science fiction · 1h 52m"
+        >
+          <div class="movie-number">01</div>
+          <div class="movie-info">
+            <h3>Horizonte Zero</h3>
+            <p>
+              Uma cena de ficção científica em Marte, com um astronauta olhando
+              para as dunas ao pôr do sol.
+            </p>
+            <span>Ficção científica · 1h 52min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-2"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-2.png"
+          data-title="Última Maré"
+          data-synopsis="Um drama sombrio em uma vila de pescadores litorânea sob um céu tempestuoso."
+          data-genre="Drama · 1h 46min"
+          data-en-title="Last Tide"
+          data-en-synopsis="A dark drama in a coastal fishing village under a stormy sky."
+          data-en-genre="Drama · 1h 46m"
+        >
+          <div class="movie-number">02</div>
+          <div class="movie-info">
+            <h3>Última Maré</h3>
+            <p>
+              Um drama sombrio em uma vila de pescadores litorânea sob um céu
+              tempestuoso.
+            </p>
+            <span>Drama · 1h 46min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-3"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-3.png"
+          data-title="Código Rubro"
+          data-synopsis="Um suspense tecnológico, com um agente digitando em um computador que exibe códigos de segurança vermelhos."
+          data-genre="Suspense · 1h 58min"
+          data-en-title="Red Code"
+          data-en-synopsis="A tech thriller, with an agent typing on a computer displaying red security codes."
+          data-en-genre="Thriller · 1h 58m"
+        >
+          <div class="movie-number">03</div>
+          <div class="movie-info">
+            <h3>Código Rubro</h3>
+            <p>
+              Um suspense tecnológico, com um agente digitando em um computador
+              que exibe códigos de segurança vermelhos.
+            </p>
+            <span>Suspense · 1h 58min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-4"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-4.png"
+          data-title="Sol de Inverno"
+          data-synopsis="Um romance acolhedor em uma cabana de montanha coberta de neve."
+          data-genre="Romance · 1h 39min"
+          data-en-title="Winter Sun"
+          data-en-synopsis="A cozy romance in a snow-covered mountain cabin."
+          data-en-genre="Romance · 1h 39m"
+        >
+          <div class="movie-number">04</div>
+          <div class="movie-info">
+            <h3>Sol de Inverno</h3>
+            <p>
+              Um romance acolhedor em uma cabana de montanha coberta de neve.
+            </p>
+            <span>Romance · 1h 39min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-5"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-5.png"
+          data-title="Vértice"
+          data-synopsis="Uma aventura de escalada, mostrando a perspectiva de um alpinista no topo de uma montanha sobre um vale de névoa."
+          data-genre="Aventura · 2h 04min"
+          data-en-title="Vertex"
+          data-en-synopsis="A climbing adventure, showing the perspective of a mountaineer at the top of a mountain over a valley of mist."
+          data-en-genre="Adventure · 2h 04m"
+        >
+          <div class="movie-number">05</div>
+          <div class="movie-info">
+            <h3>Vértice</h3>
+            <p>
+              Uma aventura de escalada, mostrando a perspectiva de um alpinista
+              no topo de uma montanha sobre um vale de névoa.
+            </p>
+            <span>Aventura · 2h 04min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-6"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-6.png"
+          data-title="Depois da Chuva"
+          data-synopsis="Em uma cidade tomada por uma neblina misteriosa e dias cinzentos intermináveis, um homem cético descobre que cada gota de chuva parece apagar memórias embaraçosas do passado. O problema começa quando ele tenta usar isso a seu favor para consertar o próprio relacionamento e acaba criando situações bizarras e hilárias. Uma comédia leve e envolvente sobre erros, recomeços e o caos do cotidiano."
+          data-genre="Comédia / Drama · 1h 35min"
+          data-en-title="After the Rain"
+          data-en-synopsis="In a city taken over by mysterious fog and endless grey days, a skeptical man discovers that each drop of rain seems to erase embarrassing memories from the past. The problem begins when he tries to use this to his advantage to fix his own relationship and ends up creating bizarre and hilarious situations. A light and engaging comedy about mistakes, new beginnings, and the chaos of everyday life."
+          data-en-genre="Comedy / Drama · 1h 35m"
+        >
+          <div class="movie-number">06</div>
+          <div class="movie-info">
+            <h3>Depois da Chuva</h3>
+            <p>
+              Em uma cidade tomada por uma neblina misteriosa e dias cinzentos
+              intermináveis, um homem cético descobre que cada gota de chuva
+              parece apagar memórias embaraçosas do passado.
+            </p>
+            <span>Comédia / Drama · 1h 35min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-7"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-7.png"
+          data-title="Arquivo 27"
+          data-synopsis="Escondidas no porão de um antigo estúdio de cinema prestes a ser demolido, latas de filme sem identificação guardam gravações perturbadoras de um crime jamais solucionado. Quando um arquivista obsessivo decide restaurar o Arquivo 27, ele começa a perceber que a pessoa por trás das câmeras sabe exatamente quem ele é — e que o mistério está mais vivo do que nunca."
+          data-genre="Mistério / Suspense · 1h 49min"
+          data-en-title="File 27"
+          data-en-synopsis="Hidden in the basement of an old film studio about to be demolished, unidentified film cans hold disturbing recordings of an unsolved crime. When an obsessive archivist decides to restore File 27, he begins to realize that the person behind the camera knows exactly who he is — and that the mystery is more alive than ever."
+          data-en-genre="Mystery / Thriller · 1h 49m"
+        >
+          <div class="movie-number">07</div>
+          <div class="movie-info">
+            <h3>Arquivo 27</h3>
+            <p>
+              Escondidas no porão de um antigo estúdio de cinema prestes a ser
+              demolido, latas de filme sem identificação guardam gravações
+              perturbadoras de um crime jamais solucionado.
+            </p>
+            <span>Mistério / Suspense · 1h 49min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-8"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-8.png"
+          data-title="Neon Azul"
+          data-synopsis="Sob as luzes de neon e as ruas molhadas de uma metrópole vibrante, uma jovem vocalista tenta fazer sua banda emergir do circuito subsolo. Entre paixões conturbadas, noites em branco e escolhas difíceis na indústria da música, Neon Azul é uma jornada visceral sobre ritmo, identidade e a busca pela própria voz em um mundo barulhento."
+          data-genre="Musical / Drama Urbano · 1h 42min"
+          data-en-title="Blue Neon"
+          data-en-synopsis="Under the neon lights and wet streets of a vibrant metropolis, a young vocalist tries to make her band emerge from the underground circuit. Between turbulent passions, sleepless nights, and difficult choices in the music industry, Blue Neon is a visceral journey about rhythm, identity, and the search for one's own voice in a noisy world."
+          data-en-genre="Musical / Urban Drama · 1h 42m"
+        >
+          <div class="movie-number">08</div>
+          <div class="movie-info">
+            <h3>Neon Azul</h3>
+            <p>
+              Sob as luzes de neon e as ruas molhadas de uma metrópole vibrante,
+              uma jovem vocalista tenta fazer sua banda emergir do circuito
+              subsolo.
+            </p>
+            <span>Musical / Drama Urbano · 1h 42min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-9"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-9.png"
+          data-title="Entre Estrelas"
+          data-synopsis="A bordo da última nave de exploração rumo ao limite da galáxia conhecida, a tripulação se depara com uma anomalia espacial hipnotizante: uma tempestade estelar cósmica. Enquanto o tempo ao redor deles começa a dobrar de forma imprevisível, eles precisam tomar uma decisão impossível entre voltar para casa ou cruzar o horizonte para o desconhecido absoluto."
+          data-genre="Ficção Científica · 2h 08min"
+          data-en-title="Among Stars"
+          data-en-synopsis="Aboard the last exploration ship heading to the edge of the known galaxy, the crew encounters a hypnotic spatial anomaly: a cosmic star storm. As time around them begins to bend unpredictably, they must make an impossible decision between returning home or crossing the horizon into the absolute unknown."
+          data-en-genre="Science Fiction · 2h 08m"
+        >
+          <div class="movie-number">09</div>
+          <div class="movie-info">
+            <h3>Entre Estrelas</h3>
+            <p>
+              A bordo da última nave de exploração rumo ao limite da galáxia
+              conhecida, a tripulação se depara com uma anomalia espacial
+              hipnotizante: uma tempestade estelar cósmica.
+            </p>
+            <span>Ficção Científica · 2h 08min</span>
+          </div>
+        </article>
+        <article
+          class="movie-card poster-10"
+          role="button"
+          tabindex="0"
+          data-poster="assets/images/posters/poster-10.png"
+          data-title="Terra Selvagem"
+          data-synopsis="Nas profundezas de uma selva inexplorada cercada por montanhas colossais e ruínas esquecidas, uma expedição busca um artefato lendário capaz de mudar a história. Conforme o grupo avança pelo território hostil, eles descobrem que o verdadeiro perigo não é apenas a natureza implacável — mas os segredos mortais guardados pelas antigas civilizações."
+          data-genre="Aventura / Ação · 1h 55min"
+          data-en-title="Wild Land"
+          data-en-synopsis="In the depths of an unexplored jungle surrounded by colossal mountains and forgotten ruins, an expedition searches for a legendary artifact capable of changing history. As the group advances through hostile territory, they discover that the true danger is not only the relentless nature — but the deadly secrets guarded by ancient civilizations."
+          data-en-genre="Adventure / Action · 1h 55m"
+        >
+          <div class="movie-number">10</div>
+          <div class="movie-info">
+            <h3>Terra Selvagem</h3>
+            <p>
+              Nas profundezas de uma selva inexplorada cercada por montanhas
+              colossais e ruínas esquecidas, uma expedição busca um artefato
+              lendário capaz de mudar a história.
+            </p>
+            <span>Aventura / Ação · 1h 55min</span>
+          </div>
+        </article>
+      </div>
+        <button
+          class="carousel-button next"
+          type="button"
+          aria-label="Ver próximos filmes"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+    <section class="benefits">
+      <article class="feature feature-reverse">
+        <div class="feature-copy">
+          <h2>Conteúdo para cada momento.</h2>
+          <p>
+            Descubra filmes, séries e produções selecionadas para uma
+            experiência que é sempre sua.
+          </p>
+        </div>
+        <div class="feature-art art-tv" aria-hidden="true">
+          <div class="screen">
+            <div class="screen-glow"></div>
+            <p>MARLON<span>FLIX</span></p>
+          </div>
+          <div class="tv-base"></div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h2>Leve suas histórias com você.</h2>
+          <p>
+            Baixe seus favoritos e assista quando quiser, mesmo quando estiver
+            sem conexão.
+          </p>
+        </div>
+        <div class="feature-art art-mobile" aria-hidden="true">
+          <div class="phone">
+            <div class="mobile-cover"></div>
+            <div class="download-card">
+              <span class="mini-cover"></span>
+              <p>
+                <b>Disponível offline</b><br /><small>Download concluído</small>
+              </p>
+              <strong>↓</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature-reverse">
+        <div class="feature-copy">
+          <h2>Assista onde quiser.</h2>
+          <p>
+            Use sua TV, notebook, tablet ou celular. A MarlonFlix acompanha sua
+            rotina.
+          </p>
+        </div>
+        <div class="feature-art art-devices" aria-hidden="true">
+          <div class="device-tv"><span>▶</span></div>
+          <div class="device-laptop"></div>
+          <div class="device-phone"></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="plans">
+      <div class="section-heading">
+        <p>ESCOLHA SEU RITMO</p>
+        <h2>Um plano para você.</h2>
+      </div>
+      <div class="plan-grid">
+        <article class="plan">
+          <h3>Essencial</h3>
+          <p class="quality">Qualidade HD</p>
+          <p class="price">R$ 14,90 <small>/mês</small></p>
+          <ul>
+            <li>1 tela por vez</li>
+            <li>Assista no celular e tablet</li>
+            <li>Cancele a qualquer momento</li>
+          </ul>
+          <a href="#email">Começar agora</a>
+        </article>
+        <article class="plan featured">
+          <span class="tag">MAIS ESCOLHIDO</span>
+          <h3>Completo</h3>
+          <p class="quality">Qualidade Full HD</p>
+          <p class="price">R$ 24,90 <small>/mês</small></p>
+          <ul>
+            <li>2 telas ao mesmo tempo</li>
+            <li>Todos os dispositivos</li>
+            <li>Downloads para assistir offline</li>
+          </ul>
+          <a href="#email">Começar agora</a>
+        </article>
+        <article class="plan">
+          <h3>Família</h3>
+          <p class="quality">Qualidade Ultra HD</p>
+          <p class="price">R$ 34,90 <small>/mês</small></p>
+          <ul>
+            <li>4 telas ao mesmo tempo</li>
+            <li>Todos os dispositivos</li>
+            <li>Perfis para toda a família</li>
+          </ul>
+          <a href="#email">Começar agora</a>
+        </article>
       </div>
     </section>
 
+    <section class="faq" id="faq">
+      <div class="section-heading">
+        <p>PRECISA DE AJUDA?</p>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>O que é a MarlonFlix?<span>+</span></summary>
+          <p>
+            Uma plataforma de entretenimento feita para você descobrir e curtir
+            histórias incríveis em qualquer tela.
+          </p>
+        </details>
+        <details>
+          <summary>Quanto custa a assinatura?<span>+</span></summary>
+          <p>
+            Você escolhe o plano que combina com a sua rotina. Não há taxa de
+            adesão e você pode cancelar quando quiser.
+          </p>
+        </details>
+        <details>
+          <summary>Onde posso assistir?<span>+</span></summary>
+          <p>
+            Na TV, notebook, tablet ou celular. Basta entrar com sua conta em um
+            dispositivo compatível.
+          </p>
+        </details>
+        <details>
+          <summary>Posso cancelar quando quiser?<span>+</span></summary>
+          <p>
+            Sim. Sua assinatura é flexível e pode ser cancelada diretamente pela
+            sua conta.
+          </p>
+        </details>
+      </div>
+      <div class="faq-cta">
+        <p>Pronto para começar? Informe seu e-mail para criar sua conta.</p>
+        <a href="#email">Criar minha conta <span>›</span></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>
+          Dúvidas? Fale com a gente:
+          <a href="mailto:contato@marlonflix.com">contato@marlonflix.com</a>
+        </p>
+        <div class="footer-links">
+          <a href="#faq">Perguntas frequentes</a
+          ><a href="#inicio">Termos de uso</a><a href="#inicio">Privacidade</a
+          ><a href="#inicio">Central de ajuda</a>
+        </div>
+        <span>© 2026 MarlonFlix</span>
+      </div>
+    </footer>
+    <div class="movie-modal" id="movie-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-overlay" data-close></div>
+      <div class="modal-card">
+        <button class="modal-close" data-close aria-label="Fechar">&times;</button>
+        <div class="modal-poster">
+          <img src="" alt="" id="modal-poster-img" />
+        </div>
+        <div class="modal-body">
+          <h3 id="modal-title"></h3>
+          <span id="modal-genre"></span>
+          <p id="modal-synopsis"></p>
+          <a href="#email" class="modal-cta" data-close>Vamos lá <span>›</span></a>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

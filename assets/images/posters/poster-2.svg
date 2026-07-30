@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="sea2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#021826"/>
+      <stop offset="30%" stop-color="#063341"/>
+      <stop offset="60%" stop-color="#176c79"/>
+      <stop offset="100%" stop-color="#c78551"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#176c79" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="#063341" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#sea2)"/>
+  <path d="M0,300 Q100,270 200,300 T400,300 L400,600 L0,600 Z" fill="url(#wave2)" opacity=".5"/>
+  <path d="M0,360 Q100,330 200,360 T400,360 L400,600 L0,600 Z" fill="url(#wave2)" opacity=".6"/>
+  <path d="M0,420 Q100,390 200,420 T400,420 L400,600 L0,600 Z" fill="url(#wave2)" opacity=".7"/>
+  <path d="M0,490 Q100,460 200,490 T400,490 L400,600 L0,600 Z" fill="#063341"/>
+  <circle cx="200" cy="150" r="60" fill="#e8c170" opacity=".15"/>
+  <g fill="#e8c170" opacity=".3">
+    <circle cx="100" cy="120" r="1"/><circle cx="300" cy="90" r="1.5"/><circle cx="250" cy="180" r="1"/>
+  </g>
+  <g transform="translate(200,530)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="26" font-weight="900" fill="#fff" letter-spacing="-1">ÚLTIMA</text>
+    <text font-size="26" font-weight="900" fill="#c78551" letter-spacing="-1" y="30">MARÉ</text>
+  </g>
+</svg>

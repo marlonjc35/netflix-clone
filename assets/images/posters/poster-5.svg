@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#081c25"/>
+      <stop offset="50%" stop-color="#1a3a42"/>
+      <stop offset="100%" stop-color="#52676b"/>
+    </linearGradient>
+    <linearGradient id="peak5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2cc85"/>
+      <stop offset="60%" stop-color="#52676b"/>
+      <stop offset="100%" stop-color="#081c25"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#sky5)"/>
+  <path d="M0,380 L80,250 L140,320 L200,150 L260,300 L320,220 L400,350 L400,600 L0,600 Z" fill="url(#peak5)"/>
+  <path d="M140,320 L200,150 L260,300 Z" fill="#f2cc85" opacity=".3"/>
+  <path d="M0,450 L100,400 L180,430 L260,380 L340,420 L400,410 L400,600 L0,600 Z" fill="#1a3a42" opacity=".7"/>
+  <path d="M0,510 L80,490 L160,500 L240,480 L320,495 L400,490 L400,600 L0,600 Z" fill="#081c25"/>
+  <g fill="#fff" opacity=".6">
+    <circle cx="70" cy="80" r="1"/><circle cx="330" cy="50" r="1.5"/><circle cx="200" cy="40" r="1"/>
+    <circle cx="120" cy="100" r="1"/><circle cx="300" cy="90" r="1"/>
+  </g>
+  <g transform="translate(200,540)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="32" font-weight="900" fill="#fff" letter-spacing="-2">VÉRTICE</text>
+  </g>
+</svg>

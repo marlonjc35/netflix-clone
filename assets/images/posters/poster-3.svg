@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#11121b"/>
+      <stop offset="50%" stop-color="#2d0815"/>
+      <stop offset="100%" stop-color="#a40016"/>
+    </linearGradient>
+    <linearGradient id="circuit3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff2030" stop-opacity=".4"/>
+      <stop offset="100%" stop-color="#a40016" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg3)"/>
+  <g stroke="#ff2030" stroke-width="1" fill="none" opacity=".25">
+    <path d="M0,100 L120,100 L120,200 L240,200 L240,80 L400,80"/>
+    <path d="M0,250 L80,250 L80,350 L200,350 L200,280 L340,280 L340,400 L400,400"/>
+    <path d="M0,420 L100,420 L100,480 L280,480 L280,420 L400,420"/>
+    <path d="M60,0 L60,150 L160,150 L160,300"/>
+    <path d="M300,0 L300,100 L360,100 L360,250"/>
+  </g>
+  <g fill="#ff2030" opacity=".4">
+    <rect x="115" y="95" width="10" height="10"/><rect x="235" y="75" width="10" height="10"/>
+    <rect x="75" y="245" width="10" height="10"/><rect x="335" y="275" width="10" height="10"/>
+  </g>
+  <rect x="50" y="350" width="300" height="250" fill="#000" opacity=".5"/>
+  <g transform="translate(200,450)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="26" font-weight="900" fill="#fff" letter-spacing="-1">CÓDIGO</text>
+    <text font-size="26" font-weight="900" fill="#ff2030" letter-spacing="-1" y="30">RUBRO</text>
+  </g>
+</svg>

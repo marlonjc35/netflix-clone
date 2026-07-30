@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1b4c"/>
+      <stop offset="50%" stop-color="#1a0d3e"/>
+      <stop offset="100%" stop-color="#be1b79"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="600" fill="url(#bg8)"/>
+  <g opacity=".5">
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#be1b79" stroke-width="2"/>
+    <line x1="0" y1="250" x2="400" y2="250" stroke="#24a9c7" stroke-width="1" opacity=".5"/>
+    <line x1="0" y1="300" x2="400" y2="300" stroke="#be1b79" stroke-width="3"/>
+    <line x1="0" y1="350" x2="400" y2="350" stroke="#24a9c7" stroke-width="1" opacity=".5"/>
+    <line x1="0" y1="400" x2="400" y2="400" stroke="#be1b79" stroke-width="2"/>
+  </g>
+  <g fill="#24a9c7" opacity=".3">
+    <rect x="40" y="100" width="80" height="120" rx="4"/>
+    <rect x="280" y="80" width="60" height="140" rx="4"/>
+    <rect x="60" y="420" width="70" height="100" rx="4"/>
+    <rect x="290" y="410" width="65" height="110" rx="4"/>
+  </g>
+  <g fill="#be1b79" opacity=".15">
+    <rect x="130" y="130" width="140" height="180" rx="4"/>
+  </g>
+  <text x="200" y="250" text-anchor="middle" font-size="48" font-weight="900" fill="#24a9c7" opacity=".25" font-family="Arial,sans-serif">N</text>
+  <g transform="translate(200,520)" text-anchor="middle" font-family="Arial,sans-serif">
+    <text font-size="28" font-weight="900" fill="#fff" letter-spacing="-1">NEON</text>
+    <text font-size="28" font-weight="900" fill="#24a9c7" letter-spacing="-1" y="32">AZUL</text>
+  </g>
+</svg>
