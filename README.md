@@ -53,7 +53,8 @@ netflix-clone/
 
 ## 🔗 Links
 
-- **Repositório:** [github.com/marlonjc35/netflix-clone](https://github.com/marlonjc35/netflix-clone)
+- **💻 Demonstração:** [netflix-clone-three-gamma-29.vercel.app](https://netflix-clone-three-gamma-29.vercel.app)
+- **📂 Código-fonte:** [github.com/marlonjc35/netflix-clone](https://github.com/marlonjc35/netflix-clone)
 
 ## 📄 Licença
 
